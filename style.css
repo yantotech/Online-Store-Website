@@ -1,0 +1,404 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+nav {
+    background-color: #014074;
+    display: flex;
+    color: #eeeeee;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
+}
+
+.brand{
+    display: flex;
+}
+.brand img {
+    width: 50px;
+}
+.brand h2 {
+    font-family: "Segoe Ui", 'sans serif';
+    color: inherit;
+    line-height: 23px;
+    letter-spacing: 3px;
+    padding-left: 5px;
+}
+
+.search {
+    font-family: serif;
+    margin-right: 110px;
+}
+input[name="search"] {
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+[type="submit"] {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+[type="submit"]:hover {
+    background-color: #1f78c1d2;
+    color: #eeeeee;
+    transition-duration: 200ms;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: "Serif";
+    color: inherit;
+    padding: 10px;
+}
+
+.shorcutbottom:hover {
+    background-color: #1f78c1;
+    transition-duration: 500ms;
+}
+
+.dropdown li {
+    text-align: center;
+    padding: 12px;
+}
+.dropdown {
+    width: 168px;
+    background-color: #014074;
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.dropdown li:hover {
+    background-color: #1f78c1;
+}
+
+nav .keranjang img {
+    width: 40px;
+    background-color: #fdfdfd;
+    border-radius: 50% ;
+    overflow: hidden;
+    border: 4px solid #fdfdfd;
+    margin-left: 75px;
+}
+nav .keranjang img:hover{
+    border-color: gold;
+    background-color: gold;
+    transition-duration: 500ms;
+}
+
+.login {
+    background-color: #de0f3f;
+    color: inherit;
+    padding: 13px;
+    border-radius: 8px;
+}
+.login:hover {
+    color: black;
+    background-color: #eeeeee;
+    transition-duration: 550ms;
+}
+
+.welcome {
+    width: 100%;
+    height: auto;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #fdfdfd;
+    font-family: "Sans";
+
+}
+.judul h2 {
+    background-color: #145da0;
+    border-radius: 40px;
+    padding: 5px 15px;
+    width: auto;
+}
+
+.allcard {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.card {
+    width: 210px;
+    background-color: #1f78c1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    color: #eeeeee;
+}
+.card:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.73);
+    transform: scale(1.03);
+    transition-duration: 400ms;
+}
+.card img {
+    width: 85%;
+    height: 135px;
+    margin-left: 15px;
+}
+.cardcontent1 {
+    padding: 16px;
+    text-align: center;
+}
+.cardcontent1 h3{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.cardcontent1 .keterangan {
+    color: black;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.button {
+    padding: 8px 16px;
+    background-color:#333;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+}
+.button:hover {
+    background-color: #eeeeee;
+    color: #333;
+    transition-duration: 500ms;
+}
+.button:active {
+    transform: scale(0.8);
+    transition-duration: 150ms;
+}
+
+#button1 {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.cardcontent2 {
+    padding: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #0164b5;
+    border-top: black solid 2.5px;
+    width: 100%;
+    height: 100%;
+}
+.cardcontent2 .diskon {
+    background-color: goldenrod;
+    width:fit-content;
+    height: fit-content;
+    padding: 2px 8px ;
+    border-radius: 5px;
+}
+.diskon:hover {
+    background-color: black;
+    color: #eeeeee;
+    transition-duration: 650ms;
+}
+.cardcontent2 .harganormal {
+    background-color: none;
+    color:#de0f3f;
+    font-size: 15px;
+    background-color: #eeeeee;
+    text-decoration: line-through;
+    border-radius: 5px;
+    padding: 2px 8px ;
+}
+.cardcontent2 .hargadiskon {
+    font-size: 30px ;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+#button2 {
+    margin-left: 1235px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#button2:hover {
+    background-color: lightgrey;
+}
+
+.closing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    background-color: #014074;
+    color: #eeeeee;
+    border-radius: 8px 8px 0px 0px;
+    padding-bottom:80px;
+    font-family:"Segoe Ui", 'Sans-serif' ;
+}
+.closingcard1 {
+    width: 550px;
+    overflow: hidden;
+    margin: 20px 30px 50px 20px;;
+}
+.closingcard1 p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+.closingcard1 h3 {
+    margin-top: 30px;
+}
+.closingcard2 {
+    width: 205px;
+    overflow: hidden;
+    margin: 20px 20px 50px 0px;
+}
+.closingcard2 p{
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: fit-content;
+    font-size: 18px;
+    padding: 1.5px 8px;
+}
+.closingcard2 p:hover {
+    background-color: #1f78c1;
+    border-radius: 8px;
+}
+.closingcard2 h2 {
+    margin-top: 12px;
+    margin-left: 7px;
+}
+
+/* Login.html */
+.loginbody {
+    background-image: url(Image/Background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Segoe Ui";
+}
+
+.login1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f78c1b3;
+    width: 400px;
+    color: #fdfdfd;
+    border-radius: 8px;
+}
+.login1 h1 {
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+}
+
+.inputbox {
+    width: 300px;
+    height: 35px;
+    margin: 35px 0;
+}
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fdfdfd;
+    border-radius: 40px;
+    padding: 0px 15px;
+}
+.inputbox input::placeholder {
+    color: #333;
+}
+
+.remember_forgot {
+    display: flex;
+    justify-content: space-between;
+}
+.remember_forgot label input {
+    margin-right: 3px;
+}
+.remember_forgot a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+.remember_forgot a:hover{
+    text-decoration: underline;
+}
+
+.login1 button {
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.registerlink p{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px 20px 0px;
+    gap: 5px;
+}
+.registerlink p a{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-weight: 500;
+}
+.registerlink p a:hover {
+    text-decoration: underline;
+}
+
+/* Product.html */
+.tampilanproduct {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Segoe Ui";
+}
+
+.category {
+    justify-content: center;
+    padding-top: 15px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 3px;
+    height: min-content;
+}
+.headcategory {
+    font-weight: bold;
+    padding: 5px 45px 15px 45px;
+    font-size: 17px;
+}
+
+.dropdown2 li{
+    padding: 19px 0px 19px 12px;
+    list-style: none;
+    border-top: 3px solid #fdfdfd
+}
+.dropdown2 li:hover {
+    background-color: lightgray;
+    transition-duration: 550ms;
+}
+
+.product {
+    width: 1300px;
+}
